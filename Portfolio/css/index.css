@@ -1,0 +1,214 @@
+@keyframes round {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 1.1) rotateX(-180deg) perspective(500px);
+  }
+  75% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.clear {
+  clear: both;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* =================================== Container start =================================== */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: blanchedalmond;
+}
+
+/* =================================== section1 start =================================== */
+.section1 {
+  width: calc(100% - 80px);
+  padding: 20px 40px;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}
+/* =================================== Header start =================================== */
+.header {
+  width: calc(100% - 40px);
+  background-color: black;
+  padding: 10px 20px;
+}
+
+/* =================================== Logo start =================================== */
+.header .logo {
+  float: left;
+}
+
+/* =================================== Nav start =================================== */
+.header .nav {
+  float: right;
+  margin-top: 13px;
+}
+.header .nav img {
+  width: 50px;
+  display: none;
+  /* background-color: blanchedalmond; */
+}
+.header .nav ul li {
+  float: left;
+  font-family: OpenSans CondensedBold;
+  font-weight: bold;
+  font-size: 15px;
+  color: #e8e8e8;
+}
+.header .nav ul li.li1 a {
+  background-color: #ff6138;
+  padding: 10px 18px;
+}
+.header .nav ul li.li2 a {
+  background-color: #00a388;
+  padding: 10px 18px;
+}
+
+/* =================================== Banner start =================================== */
+.banner {
+  width: calc(100% - 70px);
+  margin-top: 70px;
+  margin-left: 70px;
+}
+.banner .slogon img {
+  width: 30px;
+  float: left;
+}
+.banner .slogon p {
+  font-family: OpenSans CondensedBold;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 2px;
+  margin-top: 8.1px;
+  float: left;
+  color: #ffff9d;
+}
+.banner .span p {
+  font-family: PlayfairDisplay Bold;
+  font-weight: bold;
+  font-size: 80px;
+  color: #eaeaea;
+}
+.banner .let {
+  width: 162.72px;
+  background-color: #ff6138;
+  margin: 20px 0;
+  padding: 5px 8px;
+  /* border-radius: 30px; */
+}
+.banner .let h3 {
+  font-family: OpenSans CondensedBold;
+  font-weight: bold;
+  font-size: 19px;
+  color: #e8e8e8;
+  padding: 5px 10px;
+  float: left;
+}
+.banner .let img {
+  float: left;
+  margin-top: 4px;
+}
+
+/* =================================== section2 start =================================== */
+.section2 {
+  width: calc(100% - 80px);
+  padding: 20px 40px;
+}
+
+/* =================================== Content start =================================== */
+.content {
+  width: calc(33.3% - 73.2px);
+  height: 199px;
+  float: left;
+  margin: 20px 36.6px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+/* .content1 {
+  animation: round 3s linear 0s;
+}
+.content2 {
+  animation: round 3s linear 3s;
+}
+.content3 {
+  animation: round 3s linear 6s;
+}
+.content4 {
+  animation: round 3s linear 9s;
+}
+.content5 {
+  animation: round 3s linear 12s;
+}
+.content6 {
+  animation: round 3s linear 15s;
+} */
+
+.content img {
+  width: 100%;
+}
+
+/* =================================== section3 start =================================== */
+.section3 {
+  width: calc(100% - 80px);
+  padding: 20px 40px;
+}
+
+/* =================================== Social start =================================== */
+.social {
+  width: 50%;
+  float: left;
+}
+.social img {
+  margin-right: 20px;
+}
+/* =================================== Copyright start =================================== */
+.copy {
+  width: 50%;
+
+  float: right;
+}
+.copy img {
+  margin-left: 20px;
+  float: right;
+}
+.copy p {
+  margin-top: 13.8px;
+  margin-left: 20px;
+  float: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: calc(50% - 73.2px);
+  }
+  .section3 .social {
+    width: 100%;
+  }
+  .section3 .copy {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 0.5em;
+  }
+  .content {
+    width: calc(100% - 73.2px);
+  }
+  .section3 .social {
+    width: 100%;
+  }
+  .section3 .copy {
+    width: 100%;
+  }
+}
